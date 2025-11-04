@@ -1,0 +1,7 @@
+<mvc:View controllerName="winslow.workzone.sap.com.workzoneapplication.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <Button text="Testing"/>
+    </Page>
+</mvc:View>
