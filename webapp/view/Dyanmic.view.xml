@@ -1,0 +1,195 @@
+<mvc:View
+    controllerName="winslow.workzone.sap.com.workzoneapplication.controller.Dyanmic"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc">
+
+    <Shell appWidthLimited="false">
+        <Page title="Permit to Work" showNavButton="true" navButtonPress="onNavBack" enableScrolling="false">
+
+                <HBox height="100%" renderType="Bare" fitContainer="true" class="sapUiMediumMargin responsiveLayout">
+
+                    <!-- Left Section (70%) -->
+                    <ScrollContainer id="leftScroll" height="100%" vertical="true" horizontal="false" focusable="false" class="hideScrollBar leftScroll">
+
+                        <VBox class="leftSection" id="workflowSection">
+                            <Title text="{SelectedApp>/AppTitle}" level="H1" class="mainTitle"/>
+
+                             <VBox  class="leftSection visibility">
+                                <List items="{SelectedApp>/SelectionName}" showSeparators="None">
+                                    <CustomListItem >
+                                        <Link text="{SelectedApp>Name}" class="navItem" press="onNavClick"/>
+                                    </CustomListItem>
+                                </List>
+                            </VBox>
+
+                            <Title text="{SelectedApp>/WORKFLOW/Title}" level="H2" class="subTitle"/>
+                            <List items="{SelectedApp>/WORKFLOW/Items}" showSeparators="None">
+                                <CustomListItem>
+                                    <Text text="{SelectedApp>Text}" wrapping="true" />
+                                </CustomListItem>
+                            </List>
+                        </VBox>
+
+                        <!-- Second WORKFLOW DIAGRAM -->
+                        <VBox class="leftSection" id="workflowDiagramSection">
+                            <Title text="{SelectedApp>/WORKFLOWDIAGRAM/Title}" level="H2" class="subTitle"/>
+                            <Image src="{SelectedApp>/WORKFLOWDIAGRAM/Image}" width="70%" class="workflowImage" densityAware="false" alt="Workflow Diagram" />
+                        </VBox>
+
+                        <!-- Thred LEGAL REQUIREMENTS-->
+                        <VBox class="leftSection" id="legalRequirementsSection">
+                            <Title text="{SelectedApp>/LEGALREQUIREMENTS/Title}" level="H2" class="subTitle"/>
+                            <Table items="{SelectedApp>/LEGALREQUIREMENTS/Refs}" alternateRowColors="true" inset="false" class="requirementsTable">
+                                <columns>
+                                    <Column width="20%"><Text text="Ref" class="headerText" /></Column>
+                                    <Column width="80%"><Text text="Requirements" class="headerText" /></Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Top" type="Inactive">
+                                        <ObjectIdentifier title="{SelectedApp>Ref}" class="refText"/>
+                                        <VBox items="{SelectedApp>Items}">
+                                            <items>
+                                                <Link text="{SelectedApp>Text}" href="{SelectedApp>Url}" target="{SelectedApp>Target}" class="requirementText"/>
+                                            </items>
+                                        </VBox>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </VBox>
+
+                        <!-- Fourth KEY POINTS -->
+                        <VBox class="leftSection" id="keyPointsSection">
+                            <!-- Main title and description -->
+                            <Title text="{SelectedApp>/KEYPOINTS/Title}" class="keyPointsTitle" />
+                            <Text text="{SelectedApp>/KEYPOINTS/Description}" class="keyPointsDesc" />
+
+                            <!-- LEVEL 1: KEYPOINTS → Items -->
+                            <List items="{SelectedApp>/KEYPOINTS/Items}" showSeparators="None">
+                                <CustomListItem>
+                                    <VBox>
+                                        <Title text="{SelectedApp>Title}" class="purposeTitle" />
+                                        <List items="{SelectedApp>Points}" class="purposeContainer" showSeparators="None">
+                                            <CustomListItem>
+                                                <VBox >
+                                                    <Text text="{SelectedApp>Text}" class="purposeText" />
+                                                    <List items="{SelectedApp>SubPoints}" class="purposeContainer" showSeparators="None">
+                                                        <CustomListItem>
+                                                            <VBox>
+                                                                <HBox>
+                                                                    <core:Icon src="sap-icon://color-fill" size="0.6rem" class="bulletIcon sapUiMediumMarginEnd"/>
+                                                                    <Text text="{SelectedApp>Text}" />
+                                                                </HBox>
+
+                                                                <!-- LEVEL 4: SubPoints → Items -->
+                                                                <List items="{SelectedApp>SubPointsItems}" visible="{= ${SelectedApp>SubPointsItems}.length > 0 }" class="subPointsContainer" showSeparators="None">
+                                                                    <CustomListItem>
+                                                                        <HBox style="margin-left: 1.5rem;">
+                                                                            <core:Icon src="sap-icon://color-fill" size="0.6rem" class="bulletIcon sapUiMediumMarginEnd"/>
+                                                                            <Text text="{SelectedApp>Text}" />
+                                                                        </HBox>
+                                                                    </CustomListItem>
+                                                                </List>
+                                                            </VBox>
+                                                        </CustomListItem>
+                                                    </List>
+                                                </VBox>
+                                            </CustomListItem>
+                                        </List>
+                                    </VBox>
+                                </CustomListItem>
+                            </List>
+
+                            <VBox class="leftSection visibility">
+                            <!-- FORMS Section -->
+                                <Title text="{SelectedApp>/Forms/Title}" class="formsTitle" />
+                                <VBox>
+                                <List items="{SelectedApp>/Forms/Items}" showSeparators="None">
+                                    <CustomListItem>
+                                        <HBox class="formRow hoverEffect" alignItems="Center">
+                                            <core:Icon src="sap-icon://pdf-attachment" size="2rem" class="sapUiSmallMarginEnd pdfIcon"/>
+                                            <VBox class="formDetails">
+                                                <Text text="{SelectedApp>FormCode}" class="formsText" />
+                                                <Text text="{SelectedApp>Description}" class="formsDesc" />
+                                            </VBox>
+                                        </HBox>
+                                    </CustomListItem>
+                                </List>
+                            </VBox>
+                        </VBox>
+
+                        <VBox class="formsContainer leftSection visibility">
+                        <!-- PROCEDURES Section -->
+                            <Title text="{SelectedApp>/PROCEDURES/Title}" class="formsTitle" />
+                            <VBox>
+                                <List items="{SelectedApp>/PROCEDURES/Items}" showSeparators="None">
+                                    <CustomListItem>
+                                        <HBox class="procedureItem" alignItems="Center">
+                                            <core:Icon src="sap-icon://pdf-attachment" size="1.8rem" class="procedureIcon sapUiSmallMarginEnd" />
+                                            <VBox class="procedureDetails">
+                                                <Text text="{SelectedApp>Title}" class="procedureTitle"/>
+                                                <Text text="PDF Document" class="procedureSubtitle"/>
+                                            </VBox>
+                                        </HBox>
+                                    </CustomListItem>
+                                </List>
+                            </VBox>
+                            </VBox>
+                        </VBox>
+
+                    </ScrollContainer>
+
+                    <!-- Right Section (30%) -->
+                    <ScrollContainer id="rightScroll" height="100%" vertical="true" horizontal="false" focusable="false" class="hideScrollBar rightScroll">
+
+                        <VBox class="rightSection" >
+                            <List items="{SelectedApp>/SelectionName}" showSeparators="None">
+                                <CustomListItem class="TitleColor">
+                                    <Link text="{SelectedApp>Name}" class="navItem" press="onNavClick"/>
+                                </CustomListItem>
+                            </List>
+                        </VBox>
+
+                         <VBox class="formsContainer leftSection">
+                            <!-- FORMS Section -->
+                            <Title text="{SelectedApp>/Forms/Title}" class="formsTitle" />
+                            <VBox>
+                                <List items="{SelectedApp>/Forms/Items}" showSeparators="None">
+                                    <CustomListItem>
+                                        <HBox class="formRow hoverEffect" alignItems="Center">
+                                            <core:Icon src="sap-icon://pdf-attachment" size="2rem" class="sapUiSmallMarginEnd pdfIcon"/>
+                                            <VBox class="formDetails">
+                                                <Text text="{SelectedApp>FormCode}" class="formsText" />
+                                                <Text text="{SelectedApp>Description}" class="formsDesc" />
+                                            </VBox>
+                                        </HBox>
+                                    </CustomListItem>
+                                </List>
+                            </VBox>
+                        </VBox>
+
+                        <VBox class="leftSection">
+                        <!-- PROCEDURES Section -->
+                            <Title text="{SelectedApp>/PROCEDURES/Title}" class="formsTitle" />
+                            <VBox>
+                                <List items="{SelectedApp>/PROCEDURES/Items}" showSeparators="None">
+                                    <CustomListItem>
+                                        <HBox class="procedureItem" alignItems="Center">
+                                            <core:Icon src="sap-icon://pdf-attachment" size="1.8rem" class="procedureIcon sapUiSmallMarginEnd" />
+                                            <VBox class="procedureDetails">
+                                                <Text text="{SelectedApp>Title}" class="procedureTitle"/>
+                                                <Text text="PDF Document" class="procedureSubtitle"/>
+                                            </VBox>
+                                        </HBox>
+                                    </CustomListItem>
+                                </List>
+                            </VBox>
+                            </VBox>
+
+                    </ScrollContainer>
+
+                </HBox>
+
+        </Page>
+    </Shell>
+</mvc:View>

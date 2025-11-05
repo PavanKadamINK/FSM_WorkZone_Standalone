@@ -1,1 +1,311 @@
-/* Enter your custom styles here */
+.leftSection {
+  padding: 1.5rem;
+  background-color: #ffffff;
+}
+
+.mainTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.subTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #eaac2f;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sapMText {
+  font-size: 1rem;
+  color: #111;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.workflowImage {
+  display: block;
+  margin: 2rem auto;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid #ccc;
+  border-radius: 1rem;
+}
+
+/* Right Section Navigation */
+.rightSection {
+  background-color: #fdf3dd;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.TitleColor {
+  background-color: #fdf3dd !important;
+}
+
+.navItem {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000 !important;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  text-decoration: none !important;
+  background: none !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.navItem:hover {
+  color: #eaac2f !important;
+}
+
+.navItem:active,
+.navItem:focus,
+.sapMLnk:focus {
+  color: #eaac2f !important;
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Scrollbar */
+.hideScrollBar {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.hideScrollBar::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Table CSS */
+.requirementsTable .sapMListTblHeaderCell {
+  background-color: #eaac2f !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  border: none !important;
+  padding: 1rem !important;
+}
+
+.headerText {
+  color: black !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+}
+
+.refText {
+  font-weight: bold !important;
+  font-size: 1rem !important;
+  color: #000 !important;
+}
+
+.requirementsTable .sapMListTblRow,
+.requirementsTable .sapMListTblCell {
+  border: none !important;
+  padding: 1rem !important;
+}
+
+.requirementsTable .sapMLIB:nth-child(even) {
+  background-color: #f6f6f6 !important;
+}
+
+.requirementsTable .sapMLIB:nth-child(odd) {
+  background-color: #ededed !important;
+}
+
+
+
+/* Table Links */
+.requirementText {
+  color: black !important;
+  text-decoration: none !important;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.requirementText:hover,
+.requirementText:focus {
+  color: #eaac2f !important;
+  text-decoration: none !important;
+}
+
+/* Forms Section */
+.formsContainer {
+  padding: 1.5rem;
+}
+
+.formsTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #eaac2f;
+  margin-bottom: 1.5rem;
+}
+
+.formRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pdfIcon {
+  width: 2rem;
+  height: 2rem;
+  color: #000;
+}
+
+.formDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.formsText {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 0.2rem;
+}
+
+.formsDesc {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.formRow:hover .pdfIcon,
+.formRow:hover .formsText,
+.formRow:hover .formsDesc {
+  color: #eaac2f;
+}
+
+/* Procedures Section */
+.procedureContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.procedureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.procedureIcon {
+  color: #000;
+}
+
+.procedureDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.procedureTitle {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 0.2rem;
+}
+
+.procedureSubtitle {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.procedureItem:hover .procedureIcon,
+.procedureItem:hover .procedureTitle {
+  color: #eaac2f;
+}
+
+/* Key Points Section */
+.keyPointsContainer {
+  padding: 1.5rem 3rem;
+  color: #000;
+  font-family: "72", Arial, sans-serif;
+}
+
+.keyPointsTitle {
+  color: #eaac2f;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.keyPointsDesc {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.purposeTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.bulletIcon,
+.subBulletIcon {
+  color: black;
+  margin-top: 0.4rem;
+}
+
+.purposeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.purposeText {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #000;
+  text-align: justify;
+}
+
+.subPointsContainer {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.purposeList {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.4rem;
+}
+
+
+
+.visibility {
+  display: none !important;
+}
+.leftScroll {
+  width: 70% !important;
+}
+.rightScroll {
+  width: 30% !important;
+}
+.responsiveLayout {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .responsiveLayout {
+    flex-direction: column;
+  }
+  .leftScroll {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .rightScroll {
+    display: none !important;
+  }
+  .visibility {
+    display:inline !important;
+  }
+}

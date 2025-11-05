@@ -1,0 +1,468 @@
+{
+    "Applications": [
+        {
+            "AppID": "PermitToWork",
+            "AppTitle": "Permit to Work",
+            "WORKFLOW": {
+                "Title": "WORKFLOW",
+                "Items": [
+                    {
+                        "Text": "1. In consultation with the project team / project engineer, identify if the task at hand requires a permit to work."
+                    },
+                    {
+                        "Text": "2. Complete the required permit to work."
+                    },
+                    {
+                        "Text": "3. Testing."
+                    },
+                    {
+                        "Text": "4. Review and close permit upon task completion."
+                    }
+                ]
+            },
+            "WORKFLOWDIAGRAM": {
+                "Title": "WORKFLOW DIAGRAM",
+                "Image": "../Images/Permit-to-Work-1.png"
+            },
+            "LEGALREQUIREMENTS": {
+                "Title": "LEGAL REQUIREMENTS",
+                "Refs": [
+                    {
+                        "Ref": "VIC",
+                        "Items": [
+                            {
+                                "Text": "Occupational Health and Safety Act 2004",
+                                "Url": "https://content.legislation.vic.gov.au/sites/default/files/2024-03/04-107aa044-authorised.pdf",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "Occupational Health and Safety Regulations 2017",
+                                "Url": "https://content.legislation.vic.gov.au/sites/default/files/9b708566-9b49-380f-a258-4ab48af1c5bd_17-22sra005%20authorised.pdf",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "How WorkSafe applies the Law in relation to Identifying and Understanding Hazards and Risks 2007",
+                                "Url": "https://content-v2.api.worksafe.vic.gov.au/sites/default/files/2018-06/ISBN-Identifying-and-understanding-hazards-and-risks-how-WorkSafe-applies-the-law-2007-11.pdf",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "How WorkSafe applies the Law in relation to Reasonably Practicable 2007",
+                                "Url": "https://content-v2.api.worksafe.vic.gov.au/sites/default/files/2018-06/ISBN-Reasonably-practicable-how-WorkSafe-applies-the-law-2007-11.pdf",
+                                "Target": "_self"
+                            }
+                        ]
+                    },
+                    {
+                        "Ref": "QLD",
+                        "Items": [
+                            {
+                                "Text": "Work Health and Safety Act 2011",
+                                "Url": "https://www.legislation.qld.gov.au/view/pdf/inforce/current/act-2011-018",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "Work Health and Safety Act Amendment 2023",
+                                "Url": "https://www.legislation.qld.gov.au/view/html/bill.first/bill-2023-016",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "Work Health and Safety Regulation 2011",
+                                "Url": "https://www.legislation.qld.gov.au/view/html/inforce/current/sl-2011-0240",
+                                "Target": "_blank"
+                            }
+                        ]
+                    },
+                    {
+                        "Ref": "NSW",
+                        "Items": [
+                            {
+                                "Text": "Work Health and Safety Act 2011",
+                                "Url": "https://legislation.nsw.gov.au/view/html/inforce/current/act-2011-010",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "Work Health and Safety Act Amendment 2023",
+                                "Url": "https://legislation.nsw.gov.au/view/pdf/asmade/act-2023-34",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "Occupational Health and Safety Regulation 2001",
+                                "Url": "https://legislation.nsw.gov.au/view/whole/html/2006-02-03/sl-2001-0648",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "How to Manage work health and safety risks",
+                                "Url": "https://www.safework.nsw.gov.au/__data/assets/pdf_file/0012/50070/How-to-manage-work-health-and-safety-risks-COP.pdf",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "Work health and safety consultation, cooperation and coordination",
+                                "Url": "https://www.safework.nsw.gov.au/__data/assets/pdf_file/0013/50071/Code-of-practice_WHS-consultation-cooperation-and-coordination_February-2022.pdf",
+                                "Target": "_self"
+                            }
+                        ]
+                    },
+                    {
+                        "Ref": "SA",
+                        "Items": [
+                            {
+                                "Text": "Work Health and Safety Act – 2012",
+                                "Url": "https://www.legislation.sa.gov.au/__legislation/lz/c/a/work%20health%20and%20safety%20act%202012/current/2012.40.auth.pdf",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "Work Health and Safety Act (Psychosocial Risks) Amendment – 2023",
+                                "Url": "https://www.legislation.sa.gov.au/__legislation/lz/v/r/2023/work%20health%20and%20safety%20(psychosocial%20risks)%20amendment%20regulations%202023_92/2023.92.un.pdf",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "Work Health and Safety (Industrial Manslaughter) Amendment Act – 2023",
+                                "Url": "https://www.legislation.sa.gov.au/__legislation/lz/v/a/2023/work%20health%20and%20safety%20(industrial%20manslaughter)%20amendment%20act%202023_43/2023.43.un.pdf",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "Planning, Development and Infrastructure Act – 2016",
+                                "Url": "https://www.legislation.sa.gov.au/__legislation/lz/c/a/planning%20development%20and%20infrastructure%20act%202016/current/2016.14.auth.pdf",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "How to manage work health and safety risks",
+                                "Url": "https://www.safework.sa.gov.au/__data/assets/pdf_file/0007/136267/How-to-manage-work-health-and-safety-risks.pdf",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "Managing the risk of plant in the workplace",
+                                "Url": "https://www.safework.sa.gov.au/__data/assets/pdf_file/0006/136275/Managing-risks-of-plant-in-the-workplace.pdf",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "Managing the work environment and facilities",
+                                "Url": "https://www.safework.sa.gov.au/__data/assets/pdf_file/0007/136276/Managing-the-work-environment-and-facilities.pdf",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "Work health and safety consultation, cooperation, and coordination.",
+                                "Url": "https://www.safework.sa.gov.au/__data/assets/pdf_file/0020/136280/Consultation-cooperation-coordination.pdf",
+                                "Target": "_self"
+                            },
+                            {
+                                "Text": "Heavy Vehicle National Law (South Australia) Act – 2013",
+                                "Url": "https://www.legislation.sa.gov.au/__legislation/lz/c/a/heavy%20vehicle%20national%20law%20(south%20australia)%20act%202013/current/2013.36.auth.pdf",
+                                "Target": "_self"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "KEYPOINTS": {
+                "Title": "KEY POINTS",
+                "Description": "For a comprehensive guide, see the Permit to Work Procedure Documentation (WINBMS-OP-11)",
+                "Items": [
+                    {
+                        "Title": "Purpose",
+                        "Points": [
+                            {
+                                "SubPoints": [
+                                    {
+                                        "Text": "Ensure all high-risk activities are planned and monitored safely.",
+                                        "SubPointsItems": []
+                                    },
+                                    {
+                                        "Text": "Working at heights (2 meters and above)",
+                                        "SubPointsItems": [
+                                            {
+                                                "Text": "Safety harness required"
+                                            },
+                                            {
+                                                "Text": "Inspect equipment before use"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Title": "Definition",
+                        "Points": [
+                            {
+                                "SubPoints": [
+                                    {
+                                        "Text": "A permit to work is a formal document that authorises work considered hazardous and/or high risk. They outline which personnel are authorised to undertake specific work at the stated times and dates. The permit to work system requires the intended work methods and risk control measures to be established, documented, and agreed to prior to the high-risk activity commencing.",
+                                        "SubPointsItems": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Title": "Working at Heights",
+                        "Points": [
+                            {
+                                "SubPoints": [
+                                    {
+                                        "Text": "Working at heights refers to any work-related activity being undertaken at an elevated position, above 2 meters where there is potential to fall",
+                                        "SubPointsItems": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Title": "Hot Work",
+                        "Points": [
+                            {
+                                "SubPoints": [
+                                    {
+                                        "Text": "Any hot work tasks such as welding, thermal or oxygen cutting, heating, including fire-producing or spark-producing operations that may increase the risk of fire or explosion requires a specific permit to work.",
+                                        "SubPointsItems": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Title": "Prior to Commencement",
+                        "Points": [
+                            {
+                                "SubPoints": [
+                                    {
+                                        "Text": "It is the responsibility of Winslow personnel to ensure that relevant permits are completed prior to commencement of works and that all procedures outlined on the issued permit are followed by Winslow personnel, sub-contractors, and plant operators. The permit must be visibility posted in the work area.",
+                                        "SubPointsItems": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Title": "Permits",
+                        "Points": [
+                            {
+                                "SubPoints": [
+                                    {
+                                        "Text": "Permits outline the appropriate identity, nature and the extent of the job and its associated hazards. It also outlines any limitations on the extent of the work and the time during which the job may be carried out.",
+                                        "SubPointsItems": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Title": "Responsibilities",
+                        "Points": [
+                            {
+                                "SubPoints": [
+                                    {
+                                        "Text": "It is the responsibility of the project manager to ensure that all hazards associated with works that are covered by a permit are identified, assessed, and controlled. It is also the responsibility of the project manager to ensure that a permit is granted before any work can commence and that all methods outlined by the permit are safely followed.",
+                                        "SubPointsItems": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Title": "Display of signs",
+                        "Points": [
+                            {
+                                "SubPoints": [
+                                    {
+                                        "Text": "The permit holder and field supervisors must ensure all relevant signs relating to the task being performed must be prominently displayed and permits are to be available onsite for the duration of the task and available for inspection whilst works are being undertaken.",
+                                        "SubPointsItems": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "SelectionName": [
+                {
+                    "Name": "WORKFLOW"
+                },
+                {
+                    "Name": "WORKFLOW DIAGRAM"
+                },
+                {
+                    "Name": "LEGAL REQUIREMENTS"
+                },
+                {
+                    "Name": "KEY POINTS"
+                }
+            ],
+            "Forms": {
+                "Title": "FORMS",
+                "Items": [
+                    {
+                        "FormCode": "WINBMS-OP-11-A",
+                        "Description": "Permit – Working at Heights",
+                        "Selected": false
+                    },
+                    {
+                        "FormCode": "WINBMS-OP-11-B",
+                        "Description": "Permit – Hot Works",
+                        "Selected": false
+                    },
+                    {
+                        "FormCode": "WINBMS-OP-13-A",
+                        "Description": "Permit to Work – Demolition",
+                        "Selected": true
+                    }
+                ]
+            },
+            "PROCEDURES": {
+                "Title": "PROCEDURES",
+                "Items": [
+                    {
+                        "Title": "Permit to Work"
+                    },
+                    {
+                        "Title": "Confined Spaces"
+                    },
+                    {
+                        "Title": "Crane Safety Operations"
+                    }
+                ]
+            }
+        },
+        {
+            "AppID": "SafetyTraining",
+            "AppTitle": "Safety Training",
+            "WORKFLOW": {
+                "Title": "WORKFLOW",
+                "Items": [
+                    {
+                        "Text": "1. Identify training needs for all employees."
+                    },
+                    {
+                        "Text": "2. Schedule training sessions and assign trainers."
+                    },
+                    {
+                        "Text": "3. Conduct training sessions and record attendance."
+                    },
+                    {
+                        "Text": "4. Evaluate knowledge retention through assessments."
+                    }
+                ]
+            },
+            "WORKFLOWDIAGRAM": {
+                "Title": "WORKFLOW DIAGRAM",
+                "Image": "../Images/Demolition-Works.png"
+            },
+            "LEGALREQUIREMENTS": {
+                "Title": "LEGAL REQUIREMENTS",
+                "Refs": [
+                    {
+                        "Ref": "VIC",
+                        "Items": [
+                            {
+                                "Text": "Occupational Health and Safety Act 2004",
+                                "Url": "https://www.legislation.vic.gov.au/in-force/acts/occupational-health-and-safety-act-2004/",
+                                "Target": "_blank"
+                            },
+                            {
+                                "Text": "Safe Work Australia – Training Guidelines",
+                                "Url": "https://www.safeworkaustralia.gov.au/",
+                                "Target": "_self"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "KEYPOINTS": {
+                "Title": "KEY POINTS",
+                "Description": "Training ensures that all workers are competent to carry out their duties safely and effectively.",
+                "Items": [
+                    {
+                        "Title": "Training Types",
+                        "Points": [
+                            {
+                                "SubPoints": [
+                                    {
+                                        "Text": "Induction Training",
+                                        "SubPointsItems": []
+                                    },
+                                    {
+                                        "Text": "Refresher Training",
+                                        "SubPointsItems": []
+                                    },
+                                    {
+                                        "Text": "Emergency Response Training",
+                                        "SubPointsItems": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Title": "Assessment",
+                        "Points": [
+                            {
+                                "SubPoints": [
+                                    {
+                                        "Text": "Written test or online quiz",
+                                        "SubPointsItems": []
+                                    },
+                                    {
+                                        "Text": "Practical demonstration",
+                                        "SubPointsItems": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "SelectionName": [
+                {
+                    "Name": "WORKFLOW"
+                },
+                {
+                    "Name": "WORKFLOW DIAGRAM"
+                },
+                {
+                    "Name": "LEGAL REQUIREMENTS"
+                },
+                {
+                    "Name": "KEY POINTS"
+                }
+            ],
+            "Forms": {
+                "Title": "FORMS",
+                "Items": [
+                    {
+                        "FormCode": "ST-TR-01",
+                        "Description": "Training Attendance Sheet",
+                        "Selected": false
+                    },
+                    {
+                        "FormCode": "ST-TR-02",
+                        "Description": "Trainer Evaluation Form",
+                        "Selected": false
+                    },
+                    {
+                        "FormCode": "ST-TR-03",
+                        "Description": "Training Completion Certificate",
+                        "Selected": true
+                    }
+                ]
+            },
+            "PROCEDURES": {
+                "Title": "PROCEDURES",
+                "Items": [
+                    {
+                        "Title": "Conducting Induction Training"
+                    },
+                    {
+                        "Title": "Maintaining Training Records"
+                    },
+                    {
+                        "Title": "Trainer Approval Process"
+                    },
+                    {
+                        "Title": "Periodic Safety Audits"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -63,6 +63,11 @@
           "bundleName": "winslow.workzone.sap.com.workzoneapplication.i18n.i18n"
         }
       },
+       "WorkZoneModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/WorkZoneModel.json",
+        "preload": true
+      },
       "": {
         "dataSource": "mainService",
         "preload": true,
@@ -91,9 +96,16 @@
       "routes": [
         {
           "name": "RouteView1",
-          "pattern": ":?query:",
+          "pattern": "View",
           "target": [
             "TargetView1"
+          ]
+        },
+        {
+          "name": "DyanmicPage",
+          "pattern": ":?query:",
+          "target": [
+            "TargetView2"
           ]
         }
       ],
@@ -101,6 +113,10 @@
         "TargetView1": {
           "id": "View1",
           "name": "View1"
+        },
+        "TargetView2": {
+          "id": "Dyanmic",
+          "name": "Dyanmic"
         }
       }
     },
